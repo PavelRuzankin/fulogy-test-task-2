@@ -1,0 +1,105 @@
+.dashboard{
+    font-family: $font;
+    width: 50%;
+    border: 1px solid $border-color;
+    padding: 36px 0 40px 0;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__info{
+        padding-left: 40px;
+    }
+    &__title{
+        width: 100%;
+        padding: 30px 0;
+        position: relative;
+        text-align: center;
+        background-color: $main-color;
+        color: white;
+        font-size: 30px;
+    }
+    &__info-btn{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 12.4%;
+        background-color: $not-main-color;
+        @include flex-center();
+        font-size: 50px;
+    }
+    &__info-btn:hover{
+        box-shadow:4px -1px 13px 0px rgba(0,0,0,1);
+        cursor: pointer;
+    }
+    &__selector{
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    &__light-type{
+        width: 200px;
+        height: 100px;
+        background-image: url("https://constructor.fulogy.com/images/kitchens/Angular/overhead/warm.jpg");
+        margin-right: 20px;
+        margin-left: 20px;
+        position: relative;
+        cursor: pointer;
+        &_active{
+            box-shadow:1px 1px 5px 1px rgba(0,0,0,1);
+            transform: scale(1.2, 1.2);
+            position: relative;
+        }
+    }
+    &__light-name{
+        position: absolute;
+        background-color: rgba(26,26,26, 0.7);
+        height: 33.333%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @include flex-center();
+        color: white;
+    }
+    &__check{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: block;
+        color: white;
+        width: 20px;
+        height: 20px;
+        background-color: $main-color;
+        border-radius: 5px;
+        span{
+            font-size: 20px;
+        }
+    }
+}
+
+.info{
+    &__line{
+        margin-bottom: 25px;
+        max-width: 80%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__key{
+        min-width: 150px;
+        max-width: 200px;
+        margin-right: 50px;
+    }
+    &__item{
+        width: 250px;
+        &_m{
+            span{
+                padding: 4px;
+                background-color: #f0f0f0;
+                border-radius: 5px;
+                box-shadow:1px 1px 5px 1px rgb(225,225,225);
+            }
+        }
+    }
+}

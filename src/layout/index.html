@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>React App</title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__row">
+          <div class="header__logo ibg"></div>
+          <div class="header__actions">
+            <div class="header__card">
+              <span class="material-icons">
+                shopping_cart
+              </span>
+            </div>
+            <div class="header__menu-btn icon-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li>Обучающее видео</li>
+          <li>Оформление заказа</li>
+          <li>Оплата</li>
+          <li>Доставка</li>
+          <li>Гарантия</li>
+          <li>Возврат</li>
+          <li>Контакты</li>
+          <li>Партнёрам</li>
+        </ul>
+      </nav>
+      <main class="main">
+        <section class="presentation">
+          <div class="presentation__slider ibg">
+            <div class="presentation__selector">
+              <div class="presentation__buttons">
+                <div class="presentation__button presentation__button_active"></div>
+                <div class="presentation__button"></div>
+                <div class="presentation__button"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="dashboard">
+          <div class="dashboard__wrapper">
+            <div class="dashboard__info info">
+              <div class="info__line">
+                <div class="info__key">Класс:</div>
+                <div class="info__item info__item_m"><span>Standard</span></div>
+              </div>
+            </div>
+            <div class="dashboard__info info">
+              <div class="info__line">
+                <div class="info__key">Потребляемая мощность:</div>
+                <div class="info__item"><span>59Вт</span></div>
+              </div>
+            </div>
+            <div class="dashboard__info info">
+              <div class="info__line">
+                <div class="info__key">Сила света:</div>
+                <div class="info__item"><span>3459 Люмен = 7.5 ламп накаливания по 40 Вт.</span></div>
+              </div>
+            </div>
+            <div class="dashboard__info info">
+              <div class="info__line">
+                <div class="info__key">Гарантия:</div>
+                <div class="info__item"><span>3 года</span></div>
+              </div>
+            </div>
+            <div class="dashboard__info info">
+              <div class="info__line">
+                <div class="info__key">Монтаж:</div>
+                <div class="info__item"><span>Да</span></div>
+              </div>
+            </div>
+            <div class="dashboard__info info">
+              <div class="info__line">
+                <div class="info__key">Итого Сумма:</div>
+                <div class="info__item"><span>321312</span></div>
+              </div>
+            </div>
+            <div class="dashboard__title">
+              <span>Выберете цвет свечения</span>
+              <div class="dashboard__info-btn">i</div>
+            </div>
+            <div class="dashboard__selector">
+              <div class="dashboard__light-type ibg">
+                <div class="dashboard__light-name">
+                  Тёплый
+                </div>
+              </div>
+              <div class="dashboard__light-type ibg">
+                <div class="dashboard__light-name">
+                  Дневной
+                </div>
+              </div>
+              <div class="dashboard__light-type dashboard__light-type_active ibg">
+                <div class="dashboard__check">
+                  <span class="material-icons">check</span>
+                </div>
+                <div class="dashboard__light-name">
+                  Холодный
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <nav class="lower-nav">
+        <div class="lower-nav__wrapper">
+          <div class="lower-nav__body lower-nav__body_active">Вариант куни</div>
+          <div class="lower-nav__body">Размеры</div>
+          <div class="lower-nav__body">Сенсор</div>
+          <div class="lower-nav__body">Питающий кабель</div>
+          <div class="lower-nav__body">Блок питания</div>
+          <div class="lower-nav__body">Цвет Свечения</div>
+          <div class="lower-nav__body">Монтаж</div>
+          <div class="lower-nav__body">Корзина</div>
+
+        </div>
+      </nav>
+    </div>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

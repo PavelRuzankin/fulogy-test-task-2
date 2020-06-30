@@ -1,0 +1,29 @@
+.menu{
+    transition: 0.3s;
+    background-color: $menu-color;
+    position: absolute;
+    z-index: 70;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transform: translateX(100%);
+    &__list{
+        height: 100%;
+        li{
+            height: 12.5%;
+            border-top: 2px solid #282828;
+            @include flex-center();
+            font-size: 30px;
+            font-family: $font;
+            cursor: pointer;
+        }
+    }
+    &_show{
+        transform: translateX(-0.01%);
+    }
+}
+
