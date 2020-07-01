@@ -4,16 +4,15 @@
     position: absolute;
     z-index: 70;
     top: 70px;
-    right: 0;
     bottom: 0;
+    right: 0;
     width: 550px;
-    display: flex;
     flex-direction: column;
     color: white;
-    transform: translateX(100%);
     &__list{
         height: 100%;
         li{
+            transition: 0.3s;
             height: 12.5%;
             border-top: 2px solid #282828;
             @include flex-center();
@@ -21,9 +20,41 @@
             font-family: $font;
             cursor: pointer;
         }
+        li:hover{
+            background-color: $main-color;
+        }
     }
-    &_show{
-        transform: translateX(-0.01%);
+    &_exiting{
+        animation: hide 300ms
+    }
+    &_entering{
+        animation: show 300ms 
+    }
+    &_entered{
+        display: flex;
+    }
+    &_exited{
+        display: none;
     }
 }
 
+
+@keyframes show{
+    0%{
+        display: flex;
+        transform: translateX(100%);
+    }
+    100%{
+        display: flex;
+    }
+}
+
+@keyframes hide{
+    0%{
+        display: flex;
+    }
+    100%{
+        transform: translateX(100%);
+        display: none;
+    }
+}

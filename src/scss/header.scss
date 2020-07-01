@@ -1,6 +1,7 @@
 .header{
     background-color: $header-color;
     height: 70px;
+    width: 100vw;
     box-shadow:1px 3px 12px 0px rgba(0,0,0,1);
     &__row{
         width: 90%;

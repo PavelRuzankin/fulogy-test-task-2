@@ -2,7 +2,7 @@
     font-family: $font;
     width: 50%;
     border: 1px solid $border-color;
-    padding: 36px 0 40px 0;
+    padding: 40px 0 50px 0;
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -20,6 +20,7 @@
         font-size: 30px;
     }
     &__info-btn{
+        transition: 0.3s;
         position: absolute;
         left: 0;
         top: 0;
@@ -34,18 +35,18 @@
         cursor: pointer;
     }
     &__selector{
-        padding-top: 40px;
+        padding-top: 50px;
         display: flex;
         justify-content: center;
     }
     &__light-type{
         width: 200px;
         height: 100px;
-        background-image: url("https://constructor.fulogy.com/images/kitchens/Angular/overhead/warm.jpg");
         margin-right: 20px;
         margin-left: 20px;
         position: relative;
         cursor: pointer;
+        transition: 0.3s;
         &_active{
             box-shadow:1px 1px 5px 1px rgba(0,0,0,1);
             transform: scale(1.2, 1.2);
@@ -80,7 +81,7 @@
 
 .info{
     &__line{
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         max-width: 80%;
         display: flex;
         align-items: flex-start;

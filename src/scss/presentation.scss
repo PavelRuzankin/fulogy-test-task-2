@@ -3,15 +3,42 @@
     border: 1px solid #cccc;
     @include flex-center();
     &__slider{
+        overflow: hidden;
         width: 600px;
         height: 500px;
         position: relative;
         border-radius: 10px;
-        background-image: url("https://constructor.fulogy.com/images/kitchens/Angular/angular/cold.jpg");
         box-shadow:0px 0px 7px 0px rgba(0,0,0,1);
+    }
+    &__image{
+        position: absolute;
+        z-index: 20;
+        height: 100%;
+        width: 100%;
+        transition: 0.5s;
+    }
+    &__next-image{
+        position: absolute;
+        z-index: 21;
+        height: 100%;
+        width: 100%;
+        transition: 0.5s;
+    }
+    &__next-image.entering-left{
+        animation: move-left 500ms
+    }
+    &__next-image.entering-right{
+        animation: move-right 500ms
+    }
+    &__image.entering-left{
+        transform: translateX(-100%);
+    }
+    &__image.entering-right{
+        transform: translateX(100%);
     }
     &__selector{
         position: absolute;
+        z-index: 50;
         bottom: 20px;
         left: 0;
         right: 0;
@@ -31,5 +58,25 @@
         &_active{
             background-color: $border-color;
         }
+    }
+}
+
+@keyframes move-left{
+    0%{
+        display: inline;
+        right: -100%
+    }
+    100%{
+        right: 0
+    }
+}
+
+@keyframes move-right{
+    0%{
+        display: inline;
+        left: -100%
+    }
+    100%{
+        left: 0 
     }
 }

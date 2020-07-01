@@ -1,11 +1,27 @@
 .lower-nav{
+    border-top: 1px solid #ccc;
     font-family: $font;
     font-weight: bold;
     width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
     &__wrapper{
         display: flex;
     }
+    &__marker{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background-color: $main-color;
+        &_next{
+            background-color: #ff8182 !important;
+        }
+    }
     &__body{
+        position: relative;
         @include flex-center();
         text-align: center;
         padding: 0 10px;
@@ -14,6 +30,7 @@
         border-left: 1px solid $border-color;
         cursor: pointer;
         font-size: 25px;
+        background-color: white;
         &_active{
             background-color: $main-color;
             color: white;
